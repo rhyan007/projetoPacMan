@@ -14,6 +14,14 @@ void exibirLabirinto(char labirinto[TAM][TAM]) {
 }
 
 int main() {
+    // escolha de dificuldade
+    int dificuldade;
+    printf("Escolha a dificuldade:\n");
+    printf("1 - Fácil (1 fantasma, movimento aleatório)\n");
+    printf("2 - Difícil (2 fantasmas, movimento semi-inteligente)\n");
+    printf("Digite sua escolha: ");
+    scanf("%d", &dificuldade);
+
     // Inicialização do labirinto (10x10)
     char labirinto[TAM][TAM] = {
         {'#', '#', '#', '#', '#', '#', '#', '#', '#', '#'},
